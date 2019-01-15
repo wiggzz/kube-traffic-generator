@@ -1,6 +1,6 @@
 # Kube Traffic Generator
 
-This project will create a mock kubernetes service along with a deployment and pods, and also create some artificial traffic in terms of calls to that service as well as scaling of the deployment (so that some kubernetes events will be generated).
+This project will create a mock kubernetes service (petclinic) along with a deployment and pods. And also pod (traffic-generator) which creates some artificial traffic by calling 3 petclinic endpoints every second. Additionally after 100 seconds the deployment is scaled up to 4 or scaled down to 2.
 
 ## Installation
 
