@@ -4,7 +4,11 @@ This project will create a mock kubernetes service along with a deployment and p
 
 ## Installation
 
-Ensure you have appropriate RBAC permissions to be able to create `RoleBindings` and `ClusterRoles`. On GKE see https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control for more information.
+Ensure you have appropriate RBAC permissions to be able to create `RoleBindings` and `ClusterRoles`. On GKE:
+    
+    kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user YOUR_EMAIL
+
+see https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control for more information.
 
 Then, in the right kubernetes context, apply the `resources.yaml` file in this repository.
 
